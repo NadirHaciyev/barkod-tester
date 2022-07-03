@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./scss/style.min.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="form">
+        <input
+          class="input"
+          type="number"
+          placeholder="Enter Barkod..."
+          pattern="[0-9]{3}"
+        />
+        <button class="btn" type="button">Test</button>
+      </div>
+
+      <div class="correct-toast toast">
+        <div class="success-icon">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <span>Barcode entered correctly</span>
+      </div>
+
+      <div class="incorrect-toast toast">
+        <div class="x-icon">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <span>Input is incorrect information</span>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
